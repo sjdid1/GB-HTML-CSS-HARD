@@ -629,7 +629,8 @@ p {
 .footer-fb,
 .footer-tw,
 .footer-pint,
-.footer-inst {
+.footer-inst,
+.footer-google {
   background-color: #FFF;
 }
 
@@ -649,22 +650,29 @@ p {
   padding: 8px 9.6px 8px 9.93px;
 }
 
+.footer-google {
+  padding: 6px 7px 6px 8px;
+}
+
 .footer-fb,
 .footer-inst,
-.footer-tw {
+.footer-tw,
+.footer-pint {
   margin-right: 7px;
 }
 
 .footer-fb:hover,
 .footer-tw:hover,
 .footer-pint:hover,
-.footer-inst:hover {
+.footer-inst:hover,
+.footer-google:hover {
   background-color: #F16D7F;
 }
 
 .footer-fb:hover path,
 .footer-tw:hover path,
 .footer-pint:hover path,
-.footer-inst:hover path {
+.footer-inst:hover path,
+.footer-google:hover path {
   fill: #fff;
 }/*# sourceMappingURL=style.css.map */

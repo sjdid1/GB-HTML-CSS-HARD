@@ -678,11 +678,11 @@ p {
 
 .footer-contacts-left {
     font-family: Lato;
-font-size: 16px;
-line-height: 42px;
-font-weight: 400;
-letter-spacing: 0.025em;
-color: #7a7a7a;
+    font-size: 16px;
+    line-height: 42px;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    color: #7a7a7a;
 }
 
 .footer-contacts-right {
@@ -693,7 +693,8 @@ color: #7a7a7a;
 .footer-fb,
 .footer-tw,
 .footer-pint,
-.footer-inst {
+.footer-inst,
+.footer-google {
     background-color: #FFF;
 }
 
@@ -713,9 +714,14 @@ color: #7a7a7a;
     padding: 8px 9.6px 8px 9.93px;
 }
 
+.footer-google {
+    padding: 6px 7px 6px 8px;
+}
+
 .footer-fb,
 .footer-inst,
-.footer-tw {
+.footer-tw,
+.footer-pint {
     margin-right: 7px;
 }
 
@@ -723,7 +729,8 @@ color: #7a7a7a;
 .footer-fb:hover,
 .footer-tw:hover,
 .footer-pint:hover,
-.footer-inst:hover {
+.footer-inst:hover,
+.footer-google:hover {
     background-color: #F16D7F;
 
 }
@@ -731,6 +738,7 @@ color: #7a7a7a;
 .footer-fb:hover path,
 .footer-tw:hover path,
 .footer-pint:hover path,
-.footer-inst:hover path {
+.footer-inst:hover path,
+.footer-google:hover path {
     fill: #fff;
 }
