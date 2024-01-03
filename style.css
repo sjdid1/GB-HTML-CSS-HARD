@@ -162,7 +162,7 @@
 }
 
 .last:hover .menu-box::before {
-  right: 0;
+  right: 20px;
   left: auto;
 }
 
