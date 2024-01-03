@@ -139,23 +139,92 @@ $sitePaddingRight: calc(50% - 585px);
     background-color: #d05666;
 }
 
-.header-nav {
+.menu {
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
     gap: 47px;
-    justify-content: center;
-    align-items: center;
+    list-style: none;
     padding-top: 19px;
     padding-bottom: 22px;
-
-    &-link {
-        font-family: Lato;
-        font-size: 14px;
-        line-height: 26px;
-        font-weight: 700;
-        color: $siteColorText;
-    }
 }
+
+.menu-link {     
+    font-family: Lato;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $siteColorText;
+}
+
+.menu-list {
+    position: relative;
+}
+
+.menu-box {
+    background-color: #fff;
+    border: 1px solid #e8e8e8;
+    border-radius: 5px;
+    padding: 20px;
+    position: absolute;
+    top: 32px;
+    display: flex;
+}
+
+.menu-box:before {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    background-color: #f30505;
+    top: -8px;
+    left: 10px;
+    right: auto;
+    transform: rotate(45deg);
+    border-top: 1px solid #e8e8e8;
+    border-left: 1px solid #e8e8e8;
+background-color: #fff;
+}
+
+.menu-title {
+   font-family: Lato;
+   font-size: 14px;
+   line-height: 32px;
+   font-weight: 400;
+   text-transform: uppercase;
+   letter-spacing: 0.025em;
+   color: #232323;
+   padding-bottom: 8px;
+   border-bottom: 1px solid #e8e8e8;
+   width: 235px; 
+   margin-bottom: 16px;
+}
+
+.menu-item {
+    margin-right: 46px;
+}
+
+.menu-item:last-of-type {
+    margin-right: 0;
+}
+
+.item-link {
+    font-family: Lato;
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    color: #646464;
+    text-decoration: none;
+    display: block;
+}
+
+.item-link:hover {
+    color: $siteColorAccent;
+}
+
 
 .header-preview {
     background-image: url(./img/preview-img.png);
@@ -520,26 +589,6 @@ p {
     }
 }
 
-// .footer-info-left {
-//     display: flex;
-//     flex-direction: row;
-//     align-items: center;
-//     gap:28px;
-//     padding-top: 97px;
-//     max-width: 500px;
-// }
-
-// .footer-info-left-p {
-
-//     font-family: Lato;
-//     font-size: 16px;
-//     line-height: 26px;
-//     font-weight: 400;
-//     font-style: italic;
-//     letter-spacing: 0.025em;
-//     color: #222224;
-// }
-
 .footer-right-info {
     padding-top: 150px;
     padding-bottom: 143px;
@@ -655,6 +704,11 @@ p {
     font-weight: 400;
     letter-spacing: 0.025em;
     color: #898989;
+}
+
+.column-link:hover {
+    color: $siteColorAccent;
+    transition-duration: 0.2s;
 }
 
 .column-link-active {
