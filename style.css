@@ -129,13 +129,15 @@
 
 .header-account-link:hover {
   transition-duration: 0.3s;
-  background-color: #d05666;
+  background-color: #ffffff;
+  color: #f16d7f;
+  border: 1px solid #f16d7f;
 }
 
 .menu {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
   gap: 47px;
   list-style: none;
   padding-top: 19px;
@@ -155,6 +157,20 @@
   position: relative;
 }
 
+.menu-list:hover .menu-box {
+  display: flex;
+}
+
+.last:hover .menu-box::before {
+  right: 0;
+  left: auto;
+}
+
+.last:hover .menu-box {
+  right: 0;
+  left: auto;
+}
+
 .menu-box {
   background-color: #fff;
   border: 1px solid #e8e8e8;
@@ -162,16 +178,15 @@
   padding: 20px;
   position: absolute;
   top: 32px;
-  display: flex;
+  display: none;
 }
 
-.menu-box:before {
+.menu-box::before {
   content: "";
   display: block;
   width: 16px;
   height: 16px;
   position: absolute;
-  background-color: #f30505;
   top: -8px;
   left: 10px;
   right: auto;
@@ -212,6 +227,10 @@
   color: #646464;
   text-decoration: none;
   display: block;
+}
+
+.intro {
+  margin-top: 10px;
 }
 
 .item-link:hover {
