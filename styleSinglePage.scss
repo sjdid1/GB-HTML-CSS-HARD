@@ -280,6 +280,44 @@ $sitePaddingRight: calc(50% - 585px);
     font-weight: 700;
 }
 
+.slider {
+    padding-top: 11px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    
+}
+
+.slider-left-link {
+    position: relative;
+}
+
+.slider-left-pointer {
+    position: absolute;
+    left: 17px;
+    top: 15px;
+    fill: #ffffff; 
+}
+
+.slider-right-link {
+    position: relative;
+}
+.slider-right-pointer {
+    position: absolute;
+    right: 17px;
+    top: 15px;
+    fill: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
 .footer-info {
     display: flex;
     padding-left: $sitePaddingLeft;
