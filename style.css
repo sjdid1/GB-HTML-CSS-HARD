@@ -62,44 +62,39 @@
   color: #f16d7f;
 }
 
-.header-browse a {
-  display: flex;
-  align-items: center;
-  width: 87px;
-  height: 38px;
-  background-color: #cdcdcc;
-  border: 1px solid #e6e6e6;
-  border-radius: 3px 0px 0px 3px;
+.header-browse a:first-child {
   padding-left: 15px;
-  margin-left: 37px;
   font-size: 14px;
   font-family: Lato;
   font-weight: 300;
   line-height: 32px;
   color: #222222;
-  font-family: Lato;
-  font-size: 14px;
-  line-height: 32px;
-  font-weight: 300;
   letter-spacing: 0.025em;
-  color: #222222;
 }
 
-.header-browse-link:hover {
+.header-browse:hover {
   transition-duration: 0.3s;
   background-image: none;
-  background-color: #dbdbdb;
+  background-color: #ffffff;
 }
 
 .header-browse {
   position: relative;
+  margin-left: 37px;
+  background-color: #e8e8e8;
+  border: 1px solid #e6e6e6;
+  border-radius: 3px 0px 0px 3px;
+  width: 87px;
+  height: 38px;
+  display: flex;
+  align-items: center;
 }
 
 .header-browse > .menu-box {
   background-color: #ffffff;
   border: 1px solid #e8e8e8;
   border-radius: 5px;
-  left: 50px;
+  left: 20px;
   top: 47px;
   position: absolute;
   display: none;
@@ -288,6 +283,8 @@
 .preview-decor {
   padding-left: calc(50% - 585px);
   padding-right: 12px;
+  padding-top: 2px;
+  height: 97px;
 }
 
 .the-brand {
@@ -383,11 +380,6 @@
   line-height: normal;
   color: #f16d7f;
   letter-spacing: 0.025em;
-}
-
-.mainn h2,
-p {
-  text-align: center;
 }
 
 .mainn h2 {
@@ -568,7 +560,7 @@ p {
   padding-left: calc(50% - 585px);
   padding-right: calc(50% - 585px);
   justify-content: space-between;
-  align-items: center;
+  align-items: normal;
   background-image: url(img/background-foter.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -578,7 +570,7 @@ p {
   flex-direction: row;
   align-items: flex-start;
   gap: 28px;
-  padding-top: 97px;
+  padding-top: 111px;
   max-width: 500px;
 }
 .footer-info-left-p {
@@ -669,8 +661,10 @@ p {
 }
 
 .email-button-link:hover {
-  background-color: #E05C6E;
+  background-color: #ffffff;
   transition-duration: 0.3s;
+  color: #f16d7f;
+  border: 1px solid #f16d7f;
 }
 
 .footer-logo {

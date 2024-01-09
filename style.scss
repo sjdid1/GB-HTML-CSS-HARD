@@ -10,6 +10,7 @@ $siteColorAccent: #f16d7f;
 $siteColorText: #222222;
 $sitePaddingLeft: calc(50% - 585px);
 $sitePaddingRight: calc(50% - 585px);
+
 @mixin text ($fs, $ff, $fw, $lh, $color) {
     font-size: $fs;
     font-family: $ff;
@@ -72,51 +73,39 @@ $sitePaddingRight: calc(50% - 585px);
     color: $siteColorAccent;
 }
 
-
-
-.header-browse a {
-    display: flex;
-    align-items: center;
-    width: 87px;
-    height: 38px;
-    background-color: #cdcdcc;
-    
-    border: 1px solid #e6e6e6;
-    border-radius: 3px 0px 0px 3px;
+.header-browse a:first-child {
     padding-left: 15px;
-    margin-left: 37px;
     @include text(14px, Lato, 300, 32px, $siteColorText);
-    font-family: Lato;
-    font-size: 14px;
-    line-height: 32px;
-    font-weight: 300;
     letter-spacing: 0.025em;
-    color: $siteColorText;
 }
 
-.header-browse-link:hover {
+.header-browse:hover {
     transition-duration: 0.3s;
     background-image: none;
-    background-color: #dbdbdb;
+    background-color: #ffffff;
 }
 
 .header-browse {
     position: relative;
+    margin-left: 37px;
+    background-color: #e8e8e8;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px 0px 0px 3px;
+    width: 87px;
+    height: 38px;
+    display: flex;
+    align-items: center;
 }
 
 .header-browse>.menu-box {
     background-color: #ffffff;
     border: 1px solid #e8e8e8;
     border-radius: 5px;
-    left: 50px;
+    left: 20px;
     top: 47px;
-    position: absolute;
+    position:absolute;
     display: none;
-    
 }
-
-
-
 
 .header-browse:hover .menu-box {
     display: flex;
@@ -188,7 +177,7 @@ $sitePaddingRight: calc(50% - 585px);
 }
 
 .menu-link {
-    @include text(14px, Lato, 700, 26px, $siteColorText);     
+    @include text(14px, Lato, 700, 26px, $siteColorText);
     text-transform: uppercase;
 }
 
@@ -201,8 +190,8 @@ $sitePaddingRight: calc(50% - 585px);
 }
 
 .last:hover .menu-box::before {
-right: 20px;
-left: auto;
+    right: 20px;
+    left: auto;
 }
 
 .last:hover .menu-box {
@@ -232,17 +221,17 @@ left: auto;
     transform: rotate(45deg);
     border-top: 1px solid #e8e8e8;
     border-left: 1px solid #e8e8e8;
-background-color: #fff;
+    background-color: #fff;
 }
 
 .menu-title {
     @include text(14px, Lato, 400, 32px, #232323);
-   text-transform: uppercase;
-   letter-spacing: 0.025em;
-   padding-bottom: 8px;
-   border-bottom: 1px solid #e8e8e8;
-   width: 235px; 
-   margin-bottom: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #e8e8e8;
+    width: 235px;
+    margin-bottom: 16px;
 }
 
 .menu-item {
@@ -283,13 +272,15 @@ background-color: #fff;
 .preview-decor {
     padding-left: $sitePaddingLeft;
     padding-right: 12px;
+    padding-top: 2px;
+    height: 97px;
 }
 
 .the-brand {
     @include text(60px, Lato, 900, 1.2, $siteColorText);
     font-style: normal;
     letter-spacing: 0.025em;
-   
+
 }
 
 .of-luxerious {
@@ -365,12 +356,6 @@ background-color: #fff;
 .sail-board-item-info h3 {
     @include text(30px, Lato, 900, normal, $siteColorAccent);
     letter-spacing: 0.025em;
-}
-
-.mainn h2,
-p {
-    text-align: center;
-
 }
 
 .mainn h2 {
@@ -539,12 +524,13 @@ p {
     }
 }
 
+
 .footer-info {
     display: flex;
     padding-left: $sitePaddingLeft;
     padding-right: $sitePaddingRight;
     justify-content: space-between;
-    align-items: center;
+    align-items: normal;
     background-image: url(img/background-foter.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -554,7 +540,7 @@ p {
         flex-direction: row;
         align-items: flex-start;
         gap: 28px;
-        padding-top: 97px;
+        padding-top: 111px;
         max-width: 500px;
     }
 
@@ -627,8 +613,10 @@ p {
 }
 
 .email-button-link:hover {
-    background-color: #E05C6E;
+    background-color: #ffffff;
     transition-duration: 0.3s;
+    color: $siteColorAccent;
+    border: 1px solid $siteColorAccent;
 }
 
 .footer-logo {
@@ -753,3 +741,9 @@ p {
 .footer-google:hover path {
     fill: #fff;
 }
+
+
+
+
+
+
