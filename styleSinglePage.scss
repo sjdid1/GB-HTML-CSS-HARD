@@ -10,6 +10,13 @@ $siteColorAccent: #f16d7f;
 $siteColorText: #222222;
 $sitePaddingLeft: calc(50% - 585px);
 $sitePaddingRight: calc(50% - 585px);
+@mixin text ($fs, $ff, $fw, $lh, $color) {
+    font-size: $fs;
+    font-family: $ff;
+    font-weight: $fw;
+    line-height: $lh;
+    color: $color;
+}
 
 .center {
     padding-left: calc(50% - 585px);
@@ -45,10 +52,7 @@ $sitePaddingRight: calc(50% - 585px);
 }
 
 .header-name p {
-    font-family: Lato;
-    font-size: 27px;
-    line-height: 32px;
-    font-weight: 300;
+    @include text(27px, Lato, 300, 32px, #222222);
     text-transform: uppercase;
     letter-spacing: 0.025em;
     color: $siteColorText;
@@ -71,12 +75,8 @@ $sitePaddingRight: calc(50% - 585px);
     border-radius: 3px 0px 0px 3px;
     padding-left: 15px;
     margin-left: 37px;
-    font-family: Lato;
-    font-size: 14px;
-    line-height: 32px;
-    font-weight: 300;
+    @include text(14px, Lato, 300, 32px, $siteColorText);
     letter-spacing: 0.025em;
-    color: $siteColorText;
 }
 
 .header-browse-link:hover {
@@ -102,12 +102,8 @@ $sitePaddingRight: calc(50% - 585px);
     background-color: #ffffff;
     border: 1px solid #e6e6e6;
     border-radius: 0px 3px 3px 0px;
-    font-family: Lato;
-    font-size: 14px;
-    line-height: 32px;
-    font-weight: 300;
+    @include text(14px, Lato, 300, 32px, #a4a4a4);
     letter-spacing: 0.025em;
-    color: #a4a4a4;
     padding-left: 16px;
 }
 
@@ -125,12 +121,8 @@ $sitePaddingRight: calc(50% - 585px);
 }
 
 .header-account a {
-    font-family: Lato;
-    font-size: 15px;
-    line-height: 32px;
-    font-weight: 400;
+    @include text(15px, Lato, 400, 32px, #ffffff);
     letter-spacing: 0.025em;
-    color: #ffffff;
     text-align: center;
     width: 130px;
     height: 38px;
@@ -163,12 +155,8 @@ $sitePaddingRight: calc(50% - 585px);
 }
 
 .menu-link {
-    font-family: Lato;
-    font-size: 14px;
-    line-height: 26px;
-    font-weight: 700;
+    @include text(14px, Lato, 700, 26px, $siteColorText);
     text-transform: uppercase;
-    color: $siteColorText;
 }
 
 .menu-list {
@@ -215,13 +203,9 @@ $sitePaddingRight: calc(50% - 585px);
 }
 
 .menu-title {
-    font-family: Lato;
-    font-size: 14px;
-    line-height: 32px;
-    font-weight: 400;
+    @include text(14px, Lato, 400, 32px, $siteColorText);
     text-transform: uppercase;
     letter-spacing: 0.025em;
-    color: #232323;
     padding-bottom: 8px;
     border-bottom: 1px solid #e8e8e8;
     width: 235px;
@@ -237,12 +221,8 @@ $sitePaddingRight: calc(50% - 585px);
 }
 
 .item-link {
-    font-family: Lato;
-    font-size: 14px;
-    line-height: 28px;
-    font-weight: 400;
+    @include text(14px, Lato, 700, 28px, #646464);
     letter-spacing: 0.025em;
-    color: #646464;
     text-decoration: none;
     display: block;
 }
@@ -344,31 +324,19 @@ $sitePaddingRight: calc(50% - 585px);
     &-heading {
         padding-top: 73px;
         border-bottom: 1px solid #eaeaea;
+        @include text(14px, Lato, 700, 24px, $siteColorAccent);
         padding-bottom: 14px;
-        font-family: Lato;
-        font-size: 14px;
-        line-height: 24px;
-        font-weight: 700;
-        color: #f16d7f;
     }
 
     &-heading-name {
         padding-top: 17px;
         padding-bottom: 67px;
-        font-family: Lato;
-        font-size: 18px;
-        line-height: 24px;
-        font-weight: 900;
+        @include text(18px, Lato, 900, 24px, #4d4d4d);
         text-transform: uppercase;
-        color: #4d4d4d;
     }
 
     &-info {
-        font-family: Lato;
-        font-size: 14px;
-        line-height: 24px;
-        font-weight: 300;
-        color: #5e5e5e;
+        @include text(14px, Lato, 700, 24px, #5e5e5e);
         text-align: center;
         padding-left: 260px;
         padding-right: 260px;
@@ -385,20 +353,12 @@ $sitePaddingRight: calc(50% - 585px);
         }
 
         &-name p {
-            color: #2f2f2f;
-            font-family: Lato;
-            font-size: 14px;
-            line-height: 24px;
-            font-weight: 700;
+            @include text(14px, Lato, 700, 24px, #2f2f2f);
         }
 
         &-price {
+            @include text(24px, Lato, 700, 24px, $siteColorAccent);
             padding-bottom: 43px;
-            font-family: Lato;
-            font-size: 24px;
-            line-height: 24px;
-            font-weight: 700;
-            color: #ef5b70;
         }
     }
 
@@ -410,11 +370,7 @@ $sitePaddingRight: calc(50% - 585px);
         gap: 90px;
 
         &-form h3 {
-            font-family: Lato;
-            font-size: 14px;
-            line-height: 24px;
-            font-weight: 700;
-            color: #2f2f2f;
+            @include text(14px, Lato, 700, 24px, #2f2f2f);
             padding-bottom: 16px;
         }
 
@@ -424,11 +380,7 @@ $sitePaddingRight: calc(50% - 585px);
             height: 35px;
             background-color: #ffffff;
             border: 1px solid #eaeaea;
-            font-family: Lato;
-            font-size: 13px;
-            line-height: 24px;
-            font-weight: 400;
-            color: #bcbcbc;
+            @include text(13px, Lato, 400, 24px, #bcbcbc);
         }
     }
 
@@ -442,15 +394,11 @@ $sitePaddingRight: calc(50% - 585px);
         display: flex;
         align-items: center;
         gap: 15px;
-        border: 1px solid #ef5b70;
+        border: 1px solid $siteColorAccent;
         text-decoration: none;
 
         &-text {
-            font-family: Lato;
-            font-size: 16px;
-            line-height: 1.2;
-            font-weight: 700;
-            color: #ef5b70;
+            @include text(16px, Lato, 700, 1.2, $siteColorAccent);
         }
     }
 
@@ -471,12 +419,8 @@ $sitePaddingRight: calc(50% - 585px);
 .catalog-items-container h2 {
     padding-top: 119px;
     padding-bottom: 72px;
-    font-family: Lato;
-    font-size: 24px;
-    line-height: 20px;
-    font-weight: 900;
+    @include text(24px, Lato, 900, 20px, #4d4d4d);
     text-transform: uppercase;
-    color: #4d4d4d;
     text-align: center;
 }
 
@@ -531,21 +475,13 @@ gap: 32px;
     }
 
     &-heading {
-        color: $siteColorText;
-        font-size: 14px;
-        line-height: 1.2;
-        font-weight: 400;
+        @include text(14px, Lato, 400, 1.2, $siteColorText);
         text-transform: uppercase;
-        font-family: Lato;
     }
 
     &-price {
-        color: $siteColorAccent;
-        font-size: 16px;
-        line-height: 1.2;
-        font-weight: 700;
+        @include text(16px, Lato, 700, 1.2, $siteColorAccent);
         text-transform: uppercase;
-        font-family: Lato;
     }
 
     &-add {
@@ -619,30 +555,19 @@ gap: 32px;
     }
 
     &-left-p {
-        font-family: Lato;
-        font-size: 16px;
-        line-height: 26px;
-        font-weight: 400;
+        @include text(16px, Lato, 400, 26px, #222224);
         font-style: italic;
         letter-spacing: 0.025em;
-        color: #222224;
         padding-bottom: 15px;
     }
 
     &-left h3 {
-        font-family: Lato;
-        font-size: 16px;
-        line-height: 26px;
-        font-weight: 700;
+        @include text(16px, Lato, 700, 26px, $siteColorAccent);
         letter-spacing: 0.025em;
-        color: #f16d7f;
     }
 
     &-left h4 {
-        font-size: 12px;
-        line-height: 14px;
-        font-weight: 300;
-        color: #222224;
+        @include text(12px, Lato, 300, 14px, #222224);
     }
 }
 
@@ -655,22 +580,14 @@ gap: 32px;
 }
 
 .footer-right-info-p1 {
-    color: #222224;
+    @include text(24px, Lato, 400, 54px, #222224);
     text-align: center;
-    font-family: Lato;
-    font-size: 24px;
     font-style: normal;
-    font-weight: 400;
-    line-height: 54px;
 }
 
 .footer-right-info-p2 {
-    color: #222224;
-    font-family: Lato;
-    font-size: 14px;
+    @include text(14px, Lato, 400, 24px, #222224);
     font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
     padding-bottom: 32px;
 }
 
@@ -699,12 +616,9 @@ gap: 32px;
     width: 100px;
     height: 49px;
     border-radius: 0 30px 30px 0;
-    color: #FFF;
+    @include text(14px, Lato, 400, normal, #ffffff);
     text-align: center;
-    font-family: Lato;
-    font-size: 14px;
     font-style: normal;
-    font-weight: 400;
     line-height: normal;
     cursor: pointer;
 }
@@ -736,12 +650,8 @@ gap: 32px;
 }
 
 .footer-brand-column-info {
-    font-family: Lato;
-    font-size: 14px;
-    line-height: 24px;
-    font-weight: 300;
+    @include text(14px, Lato, 300, 24px, #898989);
     letter-spacing: 0.025em;
-    color: #898989;
     max-width: 500px;
     text-align: left;
 }
@@ -756,13 +666,8 @@ gap: 32px;
 }
 
 .column-link {
-
-    font-family: Lato;
-    font-size: 16px;
-    line-height: 42px;
-    font-weight: 400;
+    @include text(16px, Lato, 400, 42px, #898989);
     letter-spacing: 0.025em;
-    color: #898989;
 }
 
 .column-link:hover {
@@ -771,12 +676,8 @@ gap: 32px;
 }
 
 .column-link-active {
-    font-family: Lato;
-    font-size: 18px;
-    line-height: 26px;
-    font-weight: 700;
+    @include text(18px, Lato, 300, 26px, $siteColorAccent);
     letter-spacing: 0.025em;
-    color: $siteColorAccent;
     padding-bottom: 31px;
 }
 
@@ -790,12 +691,8 @@ gap: 32px;
 }
 
 .footer-contacts-left {
-    font-family: Lato;
-    font-size: 16px;
-    line-height: 42px;
-    font-weight: 400;
+    @include text(16px, Lato, 400, 42px, #7a7a7a);
     letter-spacing: 0.025em;
-    color: #7a7a7a;
 }
 
 .footer-contacts-right {

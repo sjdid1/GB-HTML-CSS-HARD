@@ -37,10 +37,11 @@
 }
 
 .header-name p {
-  font-family: Lato;
   font-size: 27px;
-  line-height: 32px;
+  font-family: Lato;
   font-weight: 300;
+  line-height: 32px;
+  color: #222222;
   text-transform: uppercase;
   letter-spacing: 0.025em;
   color: #222222;
@@ -63,12 +64,12 @@
   border-radius: 3px 0px 0px 3px;
   padding-left: 15px;
   margin-left: 37px;
-  font-family: Lato;
   font-size: 14px;
-  line-height: 32px;
+  font-family: Lato;
   font-weight: 300;
-  letter-spacing: 0.025em;
+  line-height: 32px;
   color: #222222;
+  letter-spacing: 0.025em;
 }
 
 .header-browse-link:hover {
@@ -94,12 +95,12 @@
   background-color: #ffffff;
   border: 1px solid #e6e6e6;
   border-radius: 0px 3px 3px 0px;
-  font-family: Lato;
   font-size: 14px;
-  line-height: 32px;
+  font-family: Lato;
   font-weight: 300;
-  letter-spacing: 0.025em;
+  line-height: 32px;
   color: #a4a4a4;
+  letter-spacing: 0.025em;
   padding-left: 16px;
 }
 
@@ -116,12 +117,12 @@
 }
 
 .header-account a {
-  font-family: Lato;
   font-size: 15px;
-  line-height: 32px;
+  font-family: Lato;
   font-weight: 400;
-  letter-spacing: 0.025em;
+  line-height: 32px;
   color: #ffffff;
+  letter-spacing: 0.025em;
   text-align: center;
   width: 130px;
   height: 38px;
@@ -154,12 +155,12 @@
 }
 
 .menu-link {
-  font-family: Lato;
   font-size: 14px;
-  line-height: 26px;
+  font-family: Lato;
   font-weight: 700;
-  text-transform: uppercase;
+  line-height: 26px;
   color: #222222;
+  text-transform: uppercase;
 }
 
 .menu-list {
@@ -206,13 +207,13 @@
 }
 
 .menu-title {
-  font-family: Lato;
   font-size: 14px;
-  line-height: 32px;
+  font-family: Lato;
   font-weight: 400;
+  line-height: 32px;
+  color: #222222;
   text-transform: uppercase;
   letter-spacing: 0.025em;
-  color: #232323;
   padding-bottom: 8px;
   border-bottom: 1px solid #e8e8e8;
   width: 235px;
@@ -228,12 +229,12 @@
 }
 
 .item-link {
-  font-family: Lato;
   font-size: 14px;
+  font-family: Lato;
+  font-weight: 700;
   line-height: 28px;
-  font-weight: 400;
-  letter-spacing: 0.025em;
   color: #646464;
+  letter-spacing: 0.025em;
   text-decoration: none;
   display: block;
 }
@@ -332,28 +333,28 @@
 .product-description-heading {
   padding-top: 73px;
   border-bottom: 1px solid #eaeaea;
-  padding-bottom: 14px;
-  font-family: Lato;
   font-size: 14px;
-  line-height: 24px;
+  font-family: Lato;
   font-weight: 700;
+  line-height: 24px;
   color: #f16d7f;
+  padding-bottom: 14px;
 }
 .product-description-heading-name {
   padding-top: 17px;
   padding-bottom: 67px;
-  font-family: Lato;
   font-size: 18px;
-  line-height: 24px;
+  font-family: Lato;
   font-weight: 900;
-  text-transform: uppercase;
+  line-height: 24px;
   color: #4d4d4d;
+  text-transform: uppercase;
 }
 .product-description-info {
-  font-family: Lato;
   font-size: 14px;
+  font-family: Lato;
+  font-weight: 700;
   line-height: 24px;
-  font-weight: 300;
   color: #5e5e5e;
   text-align: center;
   padding-left: 260px;
@@ -369,19 +370,19 @@
   color: #b9b9b9;
 }
 .product-description-info-name p {
-  color: #2f2f2f;
-  font-family: Lato;
   font-size: 14px;
-  line-height: 24px;
+  font-family: Lato;
   font-weight: 700;
+  line-height: 24px;
+  color: #2f2f2f;
 }
 .product-description-info-price {
-  padding-bottom: 43px;
-  font-family: Lato;
   font-size: 24px;
-  line-height: 24px;
+  font-family: Lato;
   font-weight: 700;
-  color: #ef5b70;
+  line-height: 24px;
+  color: #f16d7f;
+  padding-bottom: 43px;
 }
 .product-description-choose {
   padding-top: 63px;
@@ -391,10 +392,10 @@
   gap: 90px;
 }
 .product-description-choose-form h3 {
-  font-family: Lato;
   font-size: 14px;
-  line-height: 24px;
+  font-family: Lato;
   font-weight: 700;
+  line-height: 24px;
   color: #2f2f2f;
   padding-bottom: 16px;
 }
@@ -404,10 +405,10 @@
   height: 35px;
   background-color: #ffffff;
   border: 1px solid #eaeaea;
-  font-family: Lato;
   font-size: 13px;
-  line-height: 24px;
+  font-family: Lato;
   font-weight: 400;
+  line-height: 24px;
   color: #bcbcbc;
 }
 .product-description-button {
@@ -420,15 +421,15 @@
   display: flex;
   align-items: center;
   gap: 15px;
-  border: 1px solid #ef5b70;
+  border: 1px solid #f16d7f;
   text-decoration: none;
 }
 .product-description-button-text {
-  font-family: Lato;
   font-size: 16px;
-  line-height: 1.2;
+  font-family: Lato;
   font-weight: 700;
-  color: #ef5b70;
+  line-height: 1.2;
+  color: #f16d7f;
 }
 .product-description-button:hover {
   background-color: #f16d7f;
@@ -443,12 +444,12 @@
 .catalog-items-container h2 {
   padding-top: 119px;
   padding-bottom: 72px;
-  font-family: Lato;
   font-size: 24px;
-  line-height: 20px;
+  font-family: Lato;
   font-weight: 900;
-  text-transform: uppercase;
+  line-height: 20px;
   color: #4d4d4d;
+  text-transform: uppercase;
   text-align: center;
 }
 
@@ -499,20 +500,20 @@
   align-items: flex-start;
 }
 .item-heading {
-  color: #222222;
   font-size: 14px;
-  line-height: 1.2;
-  font-weight: 400;
-  text-transform: uppercase;
   font-family: Lato;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #222222;
+  text-transform: uppercase;
 }
 .item-price {
-  color: #f16d7f;
   font-size: 16px;
-  line-height: 1.2;
-  font-weight: 700;
-  text-transform: uppercase;
   font-family: Lato;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #f16d7f;
+  text-transform: uppercase;
 }
 .item-add {
   display: none;
@@ -573,27 +574,28 @@
   max-width: 500px;
 }
 .footer-info-left-p {
-  font-family: Lato;
   font-size: 16px;
-  line-height: 26px;
+  font-family: Lato;
   font-weight: 400;
+  line-height: 26px;
+  color: #222224;
   font-style: italic;
   letter-spacing: 0.025em;
-  color: #222224;
   padding-bottom: 15px;
 }
 .footer-info-left h3 {
-  font-family: Lato;
   font-size: 16px;
-  line-height: 26px;
+  font-family: Lato;
   font-weight: 700;
-  letter-spacing: 0.025em;
+  line-height: 26px;
   color: #f16d7f;
+  letter-spacing: 0.025em;
 }
 .footer-info-left h4 {
   font-size: 12px;
-  line-height: 14px;
+  font-family: Lato;
   font-weight: 300;
+  line-height: 14px;
   color: #222224;
 }
 
@@ -606,22 +608,22 @@
 }
 
 .footer-right-info-p1 {
-  color: #222224;
-  text-align: center;
-  font-family: Lato;
   font-size: 24px;
-  font-style: normal;
+  font-family: Lato;
   font-weight: 400;
   line-height: 54px;
+  color: #222224;
+  text-align: center;
+  font-style: normal;
 }
 
 .footer-right-info-p2 {
-  color: #222224;
-  font-family: Lato;
   font-size: 14px;
-  font-style: normal;
+  font-family: Lato;
   font-weight: 400;
   line-height: 24px;
+  color: #222224;
+  font-style: normal;
   padding-bottom: 32px;
 }
 
@@ -648,12 +650,13 @@
   width: 100px;
   height: 49px;
   border-radius: 0 30px 30px 0;
-  color: #FFF;
-  text-align: center;
-  font-family: Lato;
   font-size: 14px;
-  font-style: normal;
+  font-family: Lato;
   font-weight: 400;
+  line-height: normal;
+  color: #ffffff;
+  text-align: center;
+  font-style: normal;
   line-height: normal;
   cursor: pointer;
 }
@@ -685,12 +688,12 @@
 }
 
 .footer-brand-column-info {
-  font-family: Lato;
   font-size: 14px;
-  line-height: 24px;
+  font-family: Lato;
   font-weight: 300;
-  letter-spacing: 0.025em;
+  line-height: 24px;
   color: #898989;
+  letter-spacing: 0.025em;
   max-width: 500px;
   text-align: left;
 }
@@ -704,12 +707,12 @@
 }
 
 .column-link {
-  font-family: Lato;
   font-size: 16px;
-  line-height: 42px;
+  font-family: Lato;
   font-weight: 400;
-  letter-spacing: 0.025em;
+  line-height: 42px;
   color: #898989;
+  letter-spacing: 0.025em;
 }
 
 .column-link:hover {
@@ -718,12 +721,12 @@
 }
 
 .column-link-active {
-  font-family: Lato;
   font-size: 18px;
+  font-family: Lato;
+  font-weight: 300;
   line-height: 26px;
-  font-weight: 700;
-  letter-spacing: 0.025em;
   color: #f16d7f;
+  letter-spacing: 0.025em;
   padding-bottom: 31px;
 }
 
@@ -737,12 +740,12 @@
 }
 
 .footer-contacts-left {
-  font-family: Lato;
   font-size: 16px;
-  line-height: 42px;
+  font-family: Lato;
   font-weight: 400;
-  letter-spacing: 0.025em;
+  line-height: 42px;
   color: #7a7a7a;
+  letter-spacing: 0.025em;
 }
 
 .footer-contacts-right {

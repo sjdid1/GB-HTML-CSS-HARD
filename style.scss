@@ -10,6 +10,14 @@ $siteColorAccent: #f16d7f;
 $siteColorText: #222222;
 $sitePaddingLeft: calc(50% - 585px);
 $sitePaddingRight: calc(50% - 585px);
+@mixin text ($fs, $ff, $fw, $lh, $color) {
+    font-size: $fs;
+    font-family: $ff;
+    font-weight: $fw;
+    line-height: $lh;
+    color: $color;
+}
+
 
 .center {
     padding-left: calc(50% - 585px);
@@ -37,7 +45,18 @@ $sitePaddingRight: calc(50% - 585px);
     align-items: center;
 }
 
+.header-right-cart-svg:hover path {
+    fill: $siteColorAccent;
+    transition-duration: 0.3s;
+}
+
+.header-left-logo-link {
+    display: flex;
+    align-items: center;
+}
+
 .header-name p {
+    @include text(27px, Lato, 300, 32px, $siteColorText);
     font-family: Lato;
     font-size: 27px;
     line-height: 32px;
@@ -53,17 +72,20 @@ $sitePaddingRight: calc(50% - 585px);
     color: $siteColorAccent;
 }
 
+
+
 .header-browse a {
     display: flex;
     align-items: center;
     width: 87px;
     height: 38px;
     background-color: #cdcdcc;
-    background-image: linear-gradient(180.0deg, #f9f9f9 0%, #f5f5f5 100%);
+    
     border: 1px solid #e6e6e6;
     border-radius: 3px 0px 0px 3px;
     padding-left: 15px;
     margin-left: 37px;
+    @include text(14px, Lato, 300, 32px, $siteColorText);
     font-family: Lato;
     font-size: 14px;
     line-height: 32px;
@@ -76,6 +98,28 @@ $sitePaddingRight: calc(50% - 585px);
     transition-duration: 0.3s;
     background-image: none;
     background-color: #dbdbdb;
+}
+
+.header-browse {
+    position: relative;
+}
+
+.header-browse>.menu-box {
+    background-color: #ffffff;
+    border: 1px solid #e8e8e8;
+    border-radius: 5px;
+    left: 50px;
+    top: 47px;
+    position: absolute;
+    display: none;
+    
+}
+
+
+
+
+.header-browse:hover .menu-box {
+    display: flex;
 }
 
 .browse-icon {
@@ -95,12 +139,8 @@ $sitePaddingRight: calc(50% - 585px);
     background-color: #ffffff;
     border: 1px solid #e6e6e6;
     border-radius: 0px 3px 3px 0px;
-    font-family: Lato;
-    font-size: 14px;
-    line-height: 32px;
-    font-weight: 300;
+    @include text(14px, Lato, 300, 32px, #a4a4a4);
     letter-spacing: 0.025em;
-    color: #a4a4a4;
     padding-left: 16px;
 }
 
@@ -118,12 +158,8 @@ $sitePaddingRight: calc(50% - 585px);
 }
 
 .header-account a {
-    font-family: Lato;
-    font-size: 15px;
-    line-height: 32px;
-    font-weight: 400;
+    @include text(15px, Lato, 400, 32px, #ffffff);
     letter-spacing: 0.025em;
-    color: #ffffff;
     text-align: center;
     width: 130px;
     height: 38px;
@@ -151,13 +187,9 @@ $sitePaddingRight: calc(50% - 585px);
     padding-bottom: 22px;
 }
 
-.menu-link {     
-    font-family: Lato;
-    font-size: 14px;
-    line-height: 26px;
-    font-weight: 700;
+.menu-link {
+    @include text(14px, Lato, 700, 26px, $siteColorText);     
     text-transform: uppercase;
-    color: $siteColorText;
 }
 
 .menu-list {
@@ -204,13 +236,9 @@ background-color: #fff;
 }
 
 .menu-title {
-   font-family: Lato;
-   font-size: 14px;
-   line-height: 32px;
-   font-weight: 400;
+    @include text(14px, Lato, 400, 32px, #232323);
    text-transform: uppercase;
    letter-spacing: 0.025em;
-   color: #232323;
    padding-bottom: 8px;
    border-bottom: 1px solid #e8e8e8;
    width: 235px; 
@@ -226,12 +254,8 @@ background-color: #fff;
 }
 
 .item-link {
-    font-family: Lato;
-    font-size: 14px;
-    line-height: 28px;
-    font-weight: 400;
+    @include text(14px, Lato, 400, 28px, #646464);
     letter-spacing: 0.025em;
-    color: #646464;
     text-decoration: none;
     display: block;
 }
@@ -262,31 +286,20 @@ background-color: #fff;
 }
 
 .the-brand {
-    color: $siteColorText;
-    font-family: Lato;
-    font-size: 60px;
+    @include text(60px, Lato, 900, 1.2, $siteColorText);
     font-style: normal;
     letter-spacing: 0.025em;
-    font-weight: 900;
-    line-height: 1.2;
+   
 }
 
 .of-luxerious {
-    color: $siteColorText;
-    font-family: Lato;
-    font-size: 40px;
+    @include text(40px, Lato, 900, normal, $siteColorText);
     font-style: normal;
-    font-weight: 900;
-    line-height: normal;
 }
 
 .fashion {
-    color: $siteColorAccent;
-    font-family: Lato;
-    font-size: 40px;
+    @include text(40px, Lato, 900, normal, $siteColorAccent);
     font-style: normal;
-    font-weight: 900;
-    line-height: normal;
 }
 
 .sail-board {
@@ -345,20 +358,13 @@ background-color: #fff;
 }
 
 .sail-board-item-info p {
-    font-family: Lato;
-    font-size: 18px;
-    line-height: 1.2;
-    font-weight: 900;
+    @include text(18px, Lato, 900, 1.2, $siteColorText);
     letter-spacing: 0.025em;
-    color: $siteColorText;
 }
 
 .sail-board-item-info h3 {
-    font-family: Lato;
-    font-size: 30px;
-    font-weight: 900;
+    @include text(30px, Lato, 900, normal, $siteColorAccent);
     letter-spacing: 0.025em;
-    color: #f16d7f;
 }
 
 .mainn h2,
@@ -370,21 +376,13 @@ p {
 .mainn h2 {
     padding-top: 100px;
     padding-bottom: 16px;
-    font-family: Lato;
-    font-size: 30px;
-    line-height: 54px;
-    font-weight: 700;
+    @include text(30px, Lato, 700, 54px, $siteColorText);
     letter-spacing: 0.025em;
-    color: $siteColorText;
 }
 
 .mainn p {
-    font-family: Lato;
-    font-size: 14px;
-    line-height: 54px;
-    font-weight: 400;
+    @include text(14px, Lato, 400, 54px, #9f9f9f);
     letter-spacing: 0.025em;
-    color: #9f9f9f;
 }
 
 .catalog-items {
@@ -418,21 +416,13 @@ p {
     }
 
     &-heading {
-        color: $siteColorText;
-        font-size: 14px;
-        line-height: 1.2;
-        font-weight: 400;
+        @include text(14px, Lato, 400, 1.2, $siteColorText);
         text-transform: uppercase;
-        font-family: Lato;
     }
 
     &-price {
-        color: $siteColorAccent;
-        font-size: 16px;
-        line-height: 1.2;
-        font-weight: 700;
+        @include text(16px, Lato, 700, 1.2, $siteColorAccent);
         text-transform: uppercase;
-        font-family: Lato;
     }
 
     &-add {
@@ -492,13 +482,9 @@ p {
 }
 
 .button-browse {
-    color: #F26376;
-    font-family: Lato;
-    font-size: 16px;
+    @include text(16px, Lato, 700, normal, #f25376);
     font-style: normal;
-    font-weight: 700;
     letter-spacing: 0.025em;
-    line-height: normal;
     padding: 18px 43px 19px 24px;
     border: $siteColorAccent 2px solid;
     text-decoration: none;
@@ -540,22 +526,14 @@ p {
     }
 
     &-h {
-        font-family: Lato;
-        font-size: 20px;
-        line-height: 1.2;
-        font-weight: 700;
+        @include text(20px, Lato, 700, 1.2, #fbfbfb);
         letter-spacing: 0.025em;
-        color: #fbfbfb;
     }
 
     &-p {
         padding-top: 16px;
-        font-family: Lato;
-        font-size: 14px;
-        line-height: 24px;
-        font-weight: 300;
+        @include text(14px, Lato, 300, 24px, #fbfbfb);
         letter-spacing: 0.025em;
-        color: #fbfbfb;
         padding-bottom: 62px;
         margin-right: 43px;
     }
@@ -581,30 +559,19 @@ p {
     }
 
     &-left-p {
-        font-family: Lato;
-        font-size: 16px;
-        line-height: 26px;
-        font-weight: 400;
+        @include text(16px, Lato, 400, 26px, #222224);
         font-style: italic;
         letter-spacing: 0.025em;
-        color: #222224;
         padding-bottom: 15px;
     }
 
     &-left h3 {
-        font-family: Lato;
-        font-size: 16px;
-        line-height: 26px;
-        font-weight: 700;
+        @include text(16px, Lato, 700, 26px, $siteColorAccent);
         letter-spacing: 0.025em;
-        color: #f16d7f;
     }
 
     &-left h4 {
-        font-size: 12px;
-        line-height: 14px;
-        font-weight: 300;
-        color: #222224;
+        @include text(12px, Lato, 300, 14px, #222224);
     }
 }
 
@@ -617,22 +584,14 @@ p {
 }
 
 .footer-right-info-p1 {
-    color: #222224;
     text-align: center;
-    font-family: Lato;
-    font-size: 24px;
+    @include text(24px, Lato, 400, 54px, #222224);
     font-style: normal;
-    font-weight: 400;
-    line-height: 54px;
 }
 
 .footer-right-info-p2 {
-    color: #222224;
-    font-family: Lato;
-    font-size: 14px;
+    @include text(14px, Lato, 400, 24px, #222224);
     font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
     padding-bottom: 32px;
 }
 
@@ -661,13 +620,9 @@ p {
     width: 100px;
     height: 49px;
     border-radius: 0 30px 30px 0;
-    color: #FFF;
     text-align: center;
-    font-family: Lato;
-    font-size: 14px;
+    @include text(14px, Lato, 400, normal, #ffffff);
     font-style: normal;
-    font-weight: 400;
-    line-height: normal;
     cursor: pointer;
 }
 
@@ -696,12 +651,8 @@ p {
 }
 
 .footer-brand-column-info {
-    font-family: Lato;
-    font-size: 14px;
-    line-height: 24px;
-    font-weight: 300;
+    @include text(14px, Lato, 300, 24px, #898989);
     letter-spacing: 0.025em;
-    color: #898989;
     max-width: 500px;
     text-align: left;
 }
@@ -716,13 +667,8 @@ p {
 }
 
 .column-link {
-
-    font-family: Lato;
-    font-size: 16px;
-    line-height: 42px;
-    font-weight: 400;
+    @include text(16px, Lato, 400, 42px, #898989);
     letter-spacing: 0.025em;
-    color: #898989;
 }
 
 .column-link:hover {
@@ -731,12 +677,8 @@ p {
 }
 
 .column-link-active {
-    font-family: Lato;
-    font-size: 18px;
-    line-height: 26px;
-    font-weight: 700;
+    @include text(18px, Lato, 700, 26px, $siteColorAccent);
     letter-spacing: 0.025em;
-    color: $siteColorAccent;
     padding-bottom: 31px;
 }
 
@@ -750,12 +692,8 @@ p {
 }
 
 .footer-contacts-left {
-    font-family: Lato;
-    font-size: 16px;
-    line-height: 42px;
-    font-weight: 400;
+    @include text(16px, Lato, 400, 42px, #7a7a7a);
     letter-spacing: 0.025em;
-    color: #7a7a7a;
 }
 
 .footer-contacts-right {
