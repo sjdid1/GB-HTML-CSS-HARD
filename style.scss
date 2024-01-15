@@ -46,11 +46,6 @@ $sitePaddingRight: calc(50% - 585px);
     align-items: center;
 }
 
-.header-right-cart-svg:hover path {
-    fill: $siteColorAccent;
-    transition-duration: 0.3s;
-}
-
 .header-left-logo-link {
     display: flex;
     align-items: center;
@@ -103,7 +98,7 @@ $sitePaddingRight: calc(50% - 585px);
     border-radius: 5px;
     left: 20px;
     top: 47px;
-    position:absolute;
+    position: absolute;
     display: none;
 }
 
@@ -146,6 +141,113 @@ $sitePaddingRight: calc(50% - 585px);
 
 }
 
+.header-right-cart-svg:hover path {
+    fill: $siteColorAccent;
+    transition-duration: 0.3s;
+}
+
+.header-right {
+    position: relative;
+}
+
+.header-right:hover .header-cartt {
+    display: flex;
+    top: 55px;
+    position: absolute;
+}
+
+.header-cartt {
+    display: none;
+}
+
+.header-cart {
+
+    display: flex;
+    flex-direction: column;
+    padding: 21px 15px 20px 17px;
+    border: 1px solid #fbfbfb;
+    background-color: #ffffff;
+    text-wrap: nowrap;
+
+    &-items {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 14px;
+
+        &-info h2 {
+            @include text(12px, Lato, bold, 1.2, $siteColorText);
+            padding-bottom: 10px;
+        }
+
+        &-info h3 {
+            @include text(12px, Lato, bold, 1.2, $siteColorAccent);
+            padding-top: 10px;
+        }
+
+        &-close {
+            margin-left: 55px;
+        }
+
+        &-price {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 19px;
+            padding-bottom: 32px;
+            @include text(16px, Lato, bold, 1.2, $siteColorText);
+        }
+
+        &-checkout {
+            padding: 19px 74px;
+            border: 2px solid $siteColorAccent;
+            text-align: center;
+            @include text(14px, Lato, bold, 1.2, $siteColorAccent);
+        }
+
+        &-checkout:hover {
+            background-color: $siteColorAccent;
+            color: #ffffff;
+        }
+
+        &-gotocart {
+            margin-top: 11px;
+            padding: 19px 74px;
+            border: 1px solid #eaeaea;
+            text-align: center;
+            @include text(14px, Lato, bold, 1.2, #4a4a4a);
+        }
+
+        &-gotocart:hover {
+            background-color: #9f9f9f;
+        }
+    }
+
+    &-items:nth-child(1),
+    &-items:nth-child(2) {
+        border-bottom: 2px solid #fafafa;
+        padding-bottom: 16px;
+    }
+
+    &-items:nth-child(2) {
+        padding-top: 16px;
+    }
+}
+
+
+
+// ПОРАБОТАТЬ СО ЗВЕЗДАМИ
+
+.header-cart-items-info-stars-1:hover path {
+    fill: #e4af48;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
 .header-account a {
     @include text(15px, Lato, 400, 32px, #ffffff);
     letter-spacing: 0.025em;
@@ -174,6 +276,7 @@ $sitePaddingRight: calc(50% - 585px);
     list-style: none;
     padding-top: 19px;
     padding-bottom: 22px;
+    border-top: 1px solid #ececec;
 }
 
 .menu-link {
@@ -742,9 +845,3 @@ $sitePaddingRight: calc(50% - 585px);
 .footer-google:hover path {
     fill: #fff;
 }
-
-
-
-
-
-
