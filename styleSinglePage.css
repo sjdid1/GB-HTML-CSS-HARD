@@ -306,6 +306,10 @@
   font-weight: 700;
 }
 
+.heading-music {
+  background-color: #f8f3f4;
+}
+
 .slider {
   padding-top: 11px;
   display: flex;
@@ -481,7 +485,8 @@
 }
 
 .catalog-items {
-  display: flex;
+  display: -webkit-inline-box;
+  padding-left: calc(50% - 585px);
   justify-content: center;
   flex-direction: row;
   gap: 32px;
