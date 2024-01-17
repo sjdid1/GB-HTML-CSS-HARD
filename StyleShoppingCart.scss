@@ -390,6 +390,7 @@ $sitePaddingRight: calc(50% - 585px);
     padding-top: 63px;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     gap: 36px;
 
     &-left {
