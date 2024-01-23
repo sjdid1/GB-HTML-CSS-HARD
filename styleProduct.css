@@ -422,6 +422,34 @@
   justify-content: space-between;
 }
 
+.sorting {
+  height: 50px;
+  font-size: 14px;
+  font-family: Lato;
+  font-weight: 400;
+  line-height: 26px;
+  color: #6f6e6e;
+  background-color: #f3f3f3;
+  margin-bottom: 48px;
+  margin-left: 49px;
+  display: flex;
+  justify-content: left;
+  padding-left: 10px;
+}
+.sorting-block_second {
+  margin-right: 10px;
+}
+.sorting-block-text {
+  padding-left: 13px;
+  padding-right: 9px;
+  background-color: #fff;
+  margin-top: 10px;
+  border: 1px solid #ebebeb;
+}
+.sorting-block-text i {
+  padding-left: 20px;
+}
+
 .item {
   background: #ffffff;
   position: relative;
@@ -548,6 +576,43 @@
   background-color: #f16d7f;
   color: #ffffff;
   transition-duration: 0.3s;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 110px;
+  padding-top: 104px;
+  padding-bottom: 104px;
+  background-color: #222224;
+}
+.footer-content-info {
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-h {
+  font-size: 19.96px;
+  font-family: Lato;
+  font-weight: 400;
+  line-height: normal;
+  color: #fbfbfb;
+  padding-top: 28px;
+  padding-bottom: 16px;
+}
+
+.footer-p {
+  font-size: 13.972px;
+  font-family: Lato;
+  font-weight: 300;
+  line-height: normal;
+  color: #fbfbfb;
+  text-align: center;
 }
 
 .footer-info {
